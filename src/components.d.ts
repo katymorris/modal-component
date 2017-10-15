@@ -6,6 +6,63 @@
 
 import '@stencil/router';
 
+import { AwesomeBackdrop as AwesomeBackdrop } from './components/awesome-backdrop/awesome-backdrop';
+
+interface HTMLAwesomeBackdropElement extends AwesomeBackdrop, HTMLElement {
+}
+declare var HTMLAwesomeBackdropElement: {
+  prototype: HTMLAwesomeBackdropElement;
+  new (): HTMLAwesomeBackdropElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "awesome-backdrop": HTMLAwesomeBackdropElement;
+  }
+  interface ElementTagNameMap {
+      "awesome-backdrop": HTMLAwesomeBackdropElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "awesome-backdrop": JSXElements.AwesomeBackdropAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface AwesomeBackdropAttributes extends HTMLAttributes {
+        
+      }
+  }
+}
+
+import { AwesomeModal as AwesomeModal } from './components/awesome-modal/awesome-modal';
+
+interface HTMLAwesomeModalElement extends AwesomeModal, HTMLElement {
+}
+declare var HTMLAwesomeModalElement: {
+  prototype: HTMLAwesomeModalElement;
+  new (): HTMLAwesomeModalElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "awesome-modal": HTMLAwesomeModalElement;
+  }
+  interface ElementTagNameMap {
+      "awesome-modal": HTMLAwesomeModalElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "awesome-modal": JSXElements.AwesomeModalAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface AwesomeModalAttributes extends HTMLAttributes {
+        
+          open?: any,
+          title?: string,
+          content?: string
+      }
+  }
+}
+
 import { MyName as MyName } from './components/my-name/my-name';
 
 interface HTMLMyNameElement extends MyName, HTMLElement {

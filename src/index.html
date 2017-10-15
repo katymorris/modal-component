@@ -16,7 +16,18 @@
 </head>
 <body>
 
-  <my-name first="Stencil" last="JS"></my-name>
+  <button>Open Modal</button>
 
+  <!-- <awesome-backdrop></awesome-backdrop> -->
+  <awesome-modal title="Awesommme" content="some stuff"></awesome-modal>
+  
+  <script>
+    var button = document.querySelector("button");
+    var modal = document.querySelector("awesome-modal");
+
+    button.addEventListener("click", function() {
+      modal.style.display = "block";
+    });
+  </script>
 </body>
 </html>
