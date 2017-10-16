@@ -38,6 +38,10 @@ export class AwesomeModal {
         }
         return (
             <div>
+                <div class="am-icon-box">
+                    <span class="am-icon am-icon-error am-icon-error-line am-icon-error-line-right"></span>
+                    <span class="am-icon am-icon-error am-icon-error-line am-icon-error-line-left"></span>
+                </div>
                 <h1>{this.title}</h1>
                 <p>{this.content}</p>
                 <hr />
